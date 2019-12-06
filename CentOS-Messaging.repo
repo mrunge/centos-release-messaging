@@ -1,0 +1,18 @@
+# CentOS-Messaging.repo
+#
+# Please see http://wiki.centos.org/SpecialInterestGroup/Messaging for more
+# information
+
+[centos-messaging-testing]
+name=CentOS-7 - Messaging - testing repo
+baseurl=http://buildlogs.centos.org/centos/$releasever/messaging/$basearch/
+gpgcheck=0
+enabled=0
+
+[centos-release-messaging]
+name=CentOS-7 - Messaging - release
+baseurl=http://mirror.centos.org/$contentdir/$releasever/messaging/$basearch/
+gpgcheck=1
+enabled=1
+skip_if_unavailable=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Messaging
